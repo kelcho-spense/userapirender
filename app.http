@@ -1,0 +1,21 @@
+
+
+
+GET http://localhost:8000/api/ok
+###
+GET http://localhost:8000/api/metrics
+###
+GET http://localhost:8000/api/v1/users 
+
+###
+GET http://localhost:8000/api/v1/users/1
+
+###
+POST http://localhost:8000/api/v1/users
+content-type: application/json
+
+{
+    "fullname": "daniel",
+    "address": "sample address",
+    "score": 10
+}
