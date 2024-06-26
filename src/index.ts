@@ -30,6 +30,10 @@ app.notFound((c) => {
   return c.text('Route not found💀', 404)
 })
 
+app.get('/error', (c) => {
+  throw new Error('This is a test error')
+})
+
 // custom routes
 app.route('v1/users', userV1)
 app.route('v2/users', userV2)
